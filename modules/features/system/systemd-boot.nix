@@ -1,6 +1,9 @@
 {
   flake.modules.nixos.base = {
-    boot.loader.systemd-boot.enable = true;
+    boot.loader.systemd-boot = {
+      enable = true;
+      configurationLimit = 5;
+    };
     boot.loader.efi.canTouchEfiVariables = true;
   };
 }
