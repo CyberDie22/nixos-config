@@ -1,6 +1,6 @@
 {
-    flake.modules.nixos.workstation = {
-        services.desktopManager.plasma6.enable = true;
-        services.displayManager.plasma-login-manager.enable = true;
-    };
+  flake.modules.nixos.workstation = {
+    services.desktopManager.plasma6.enable = true;
+    services.displayManager.plasma-login-manager.enable = true;
+  };
 }
