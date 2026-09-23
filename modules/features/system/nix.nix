@@ -1,5 +1,5 @@
 {
-  flake.modules.nixos.base = {
+  flake.modules.nixos.base = { config, ... }: {
     nix.settings = {
       experimental-features = [
         "nix-command"
@@ -16,6 +16,7 @@
       enable = true;
       clean.enable = true;
       clean.extraArgs = "--keep 5 --keep-since 7d";
+      flake = "/home/benbuzard/Developer/nixos-config";
     };
   };
 }
