@@ -7,7 +7,7 @@ in
     modules = [
       m.nixos.base
       m.nixos.workstation
-      ./_hardware/testvm.nix
+      ./_hardware.nix
       {
         networking.hostName = "testvm";
         time.timeZone = "America/Los_Angeles";
